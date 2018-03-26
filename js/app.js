@@ -13,7 +13,7 @@ getPosition()
     latitude = position.coords.latitude;
     longitude=position.coords.longitude;
 
-    var url = "http://api.openweathermap.org/data/2.5/weather?appid=6132cc4e490351bbf1d1a1fc030dd290&lat="+latitude+"&lon="+longitude+"&units=metric";
+    var url = "https://api.openweathermap.org/data/2.5/weather?appid=6132cc4e490351bbf1d1a1fc030dd290&lat="+latitude+"&lon="+longitude+"&units=metric";
 
     fetch(url)
     .then(res => res.json())
@@ -42,7 +42,7 @@ getPosition()
         }
         document.body.style.backgroundColor = bg;
         
-        url = "http://api.openweathermap.org/data/2.5/uvi?appid=6132cc4e490351bbf1d1a1fc030dd290&lat="+latitude+"&lon="+longitude+"&units=metric";
+        url = "https://api.openweathermap.org/data/2.5/uvi?appid=6132cc4e490351bbf1d1a1fc030dd290&lat="+latitude+"&lon="+longitude+"&units=metric";
         
 
         fetch(url)
