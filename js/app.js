@@ -54,13 +54,13 @@ getPosition()
             if (uv<2.9){
                 uvidex = "Baixo";
             }
-            else if ((uv>3.0) && (uv<5.9)){
+            else if ((uv>=3.0) && (uv<=5.9)){
                 uvindex = "Moderado";
             }
-            else if ((uv>6.0) && (uv<7.9)){
+            else if ((uv>=6.0) && (uv<=7.9)){
                 uvindex = "Alto";
             }
-            else if ((uv>6.0) && (uv<7.9)){
+            else if ((uv>=8.0) && (uv<=10.9)){
                 uvindex = "Muito Alto";
             } 
             else {
